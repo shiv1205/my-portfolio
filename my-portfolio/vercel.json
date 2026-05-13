@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/auth.js"
+    }
+  ],
+  "functions": {
+    "api/auth.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
